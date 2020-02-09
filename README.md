@@ -1,23 +1,21 @@
 # Todo List API
-# 1. bundle
-# 2. rake db:create db:migrate
-# 3. rails s
+ 1. bundle
+ 2. rake db:create db:migrate
+ 3. rails s
 
-#(in /home/mnetke/Projects/todos)
-#                   Prefix Verb   URI Pattern                                                                              Controller#Action
-#        letter_opener_web        /letter_opener                                                                           LetterOpenerWeb::Engine
-#             authenticate GET    /authenticate(.:format)                                                                  #authentication#authenticate
-#             api_v1_users POST   /api/v1/users(.:format)                                                                  api/v1/users#create
-#             api_v1_user GET    /api/v1/users/:id(.:format)                                                              api/v1/users#show
-#       api_v1_todo_items GET    /api/v1/todos/:todo_id/items(.:format)                                                   api/v1/items#index
-#                         POST   /api/v1/todos/:todo_id/items(.:format)                                                   api/v1/items#create
-#         api_v1_todo_item GET    /api/v1/todos/:todo_id/items/:id(.:format)                                               api/v1/items#show
-#                          PATCH  /api/v1/todos/:todo_id/items/:id(.:format)                                               api/v1/items#update
-#                          PUT    /api/v1/todos/:todo_id/items/:id(.:format)                                               api/v1/items#update
-#                          DELETE /api/v1/todos/:todo_id/items/:id(.:format)                                               api/v1/items#destroy
-#                          POST   /api/v1/todos(.:format)                                                                  api/v1/todos#create
-#              api_v1_todo GET    /api/v1/todos/:id(.:format)                                                              api/v1/todos#show
-#                         PATCH  /api/v1/todos/:id(.:format)                                                              api/v1/todos#update
-#                          PUT    /api/v1/todos/:id(.:format)                                                              api/v1/todos#update
-#                          DELETE /api/v1/todos/:id(.:format)                                                              api/v1/todos#destroy
-
+  letter_opener_web        /letter_opener                                                                           LetterOpenerWeb::Engine
+             authenticate GET    /authenticate(.:format)                                                                  authentication#authenticate
+                    users POST   /users(.:format)                                                                         users#create
+                     user GET    /users/:id(.:format)                                                                     users#show
+               todo_items GET    /todos/:todo_id/items(.:format)                                                          items#index
+                          POST   /todos/:todo_id/items(.:format)                                                          items#create
+                todo_item GET    /todos/:todo_id/items/:id(.:format)                                                      items#show
+                          PATCH  /todos/:todo_id/items/:id(.:format)                                                      items#update
+                          PUT    /todos/:todo_id/items/:id(.:format)                                                      items#update
+                          DELETE /todos/:todo_id/items/:id(.:format)                                                      items#destroy
+                    todos GET    /todos(.:format)                                                                         todos#index
+                          POST   /todos(.:format)                                                                         todos#create
+                     todo GET    /todos/:id(.:format)                                                                     todos#show
+                          PATCH  /todos/:id(.:format)                                                                     todos#update
+                          PUT    /todos/:id(.:format)                                                                     todos#update
+                          DELETE /todos/:id(.:format)  
